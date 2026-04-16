@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site para minha princesinha!</title>
+  <link rel="stylesheet" type="text/css" href="vibeCss2.css" media="screen">
+</head>
+<body>
+
+<div class="image-container">
+  <div class="linha-imagens">
+
+    <!-- COLUNA 1 -->
+    <div class="coluna-imagem">
+      <div class="foto-paragrafo">
+        <img src="foto2.jpg.jpeg" class="foto" id="foto2">
+        <p id="p2">Um belo domingo feliz no parque, eu amo cada detalhe seu,<br> 
+        o seu sorriso é a minha felicidade e a certeza de que estou com a pessoa certa.<br> 
+        Saiba que eu te amo e amo momentos assim ao seu lado.<br></p>
+      </div>
+      
+      <div class="foto-paragrafo">
+        <img src="foto5.jpg.jpeg" class="foto" id="foto5">
+        <p id="p5"> Nesse dia você estava muito linda, parecendo uma princesa rosinha,<br>
+        tava o amor da minha vida toda, você a cada dia que passa,<br>
+        fica mais brilhosa, maravilhosa, esplêndida, e magnífica.<br>
+        Você é e sempre será minha princesa!<br>
+        eu te amo!</p>
+      </div>
+    </div>
+
+    <!-- COLUNA 2 -->
+    <div class="coluna-imagem">
+      <div class="foto-paragrafo">
+        <img src="foto3.jpg.jpeg" class="foto" id="foto3">
+        <p id="p3">Você é o meu lugar favorito no mundo inteiro.<br> 
+        Entre tudo que existe, eu escolheria você mil vezes, sem pensar duas.<br> 
+        Eu não sabia o que era amor até você chegar e me ensinar todos os dias.<br></p>
+      </div>
+      
+      <div class="foto-paragrafo">
+        <img src="foto6.jpg.jpeg" class="foto" id="foto6">
+        <p id="p6">Estávamos nós de novo, tirando váarias e várias fotos e <br>
+        não gostando de nenhuma, esse nosso jeitinho é muito engraçado kkk,<br>
+        quem faz mais isso é você mas enfim kkk. Esses momentos são muito<br>
+        importantes pra nós, porque os pequenos detalhes são os<br>
+        que fazem a diferença.<br>
+        eu te amo!</p>
+      </div>
+    </div>
+
+    <!-- COLUNA 3 -->
+    <div class="coluna-imagem">
+      <div class="foto-paragrafo">
+        <img src="foto4.jpg.jpeg" class="foto" id="foto4">
+        <p id="p4">Esse dia ficou marcado no meu coração, cada detalhe,<br> 
+        cada sorriso e carinho seu me fez perceber o quanto<br> 
+        sou sortuda em te ter. Que venham mais momentos assim.<br> 
+        eu te amo!</p>
+      </div>
+      
+      <div class="foto-paragrafo">
+        <img src="foto7.jpg.jpeg" class="foto" id="foto7">
+        <p id="p7">Seu sorriso me encanta como conto de fadas. Momentos assim são muito legais<br>
+        e super engraçados, ver você muito feliz aquele dia,<br>
+        me deixou extremamente agradeçido a Deus por ter vc.<br>
+        eu te amo!</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="finalização">
+    <h1>Espero que tenha gostado Meu Amor, saiba que fiz com muito carinho e<br>
+    muito amor pra vc. Feliz nosso dia, e vamos passar essa data juntos até<br>
+    o fim da vida.<br> Eu te amo minha negresca!</h1>
+</div>
+
+<script>
+  function criarCoracao() {
+    const coracao = document.createElement("div");
+    coracao.classList.add("heart");
+    coracao.style.left = Math.random() * 100 + "vw";
+    coracao.style.animationDuration = (Math.random() * 5 + 5) + "s";
+    coracao.innerText = "💖";
+    document.body.appendChild(coracao);
+
+    setTimeout(() => {
+      coracao.remove();
+    }, 10000);
+  }
+
+  setInterval(criarCoracao, 500); // mais frequente = mais corações
+</script>
+
+
+</body>
+<div class="final-mensagem">
+  <p>
+    E por fim...<br><br>
+    <strong>Você é o meu presente mais precioso,</strong><br>
+    minha melhor amiga, minha parceira, meu amor.<br>
+    Cada momento ao seu lado é um pedacinho de eternidade.<br>
+    Obrigado por ser você, tão linda por dentro e por fora.<br><br>
+    <span class="te-amo">Eu te amo infinitamente! 💖</span>
+  </p>
+</div>
+</html>

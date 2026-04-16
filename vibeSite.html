@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Site para minha princesinha!</title>
+  <link rel="stylesheet" href="vibeCss.css" media="screen">
+</head>
+<body>
+
+  <div class="tudo">
+    <div class="conteiner">
+      <div id="dataNamoro">
+        <p class="p03">Desde: 19/10/2023</p>
+        <p class="p04">Data atual: <span id="dataAtual"></span></p>
+        <p class="p05">Dias juntos: <span id="dias"></span></p>
+        <p class="fraseAmor">Você é meu melhor dia, todos os dias. ✨</p>
+      </div>
+    </div>
+
+    <div class="principal">
+      <h1 class="tituloGeral">Aqui apresentarei a nossa história juntos.</h1>
+      <p class="p01">Desde 19/10/23</p>
+
+      <h1 class="subtitulo">Aqui ficará nossa história</h1>
+
+      <div class="foto-e-botao">
+        <div class="foto01">
+          <img src="foto1.jpg.jpeg" alt="fotinha1" class="foto1">
+          <div class="frase-centro">"Com você tudo faz sentido."</div>
+        </div>
+
+        <div id="button01">
+          <a href="vibeSite2.html"><p class="p02"> clique aqui </p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <iframe
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/7fBv7CLKzipRk6EC6TWHOB?utm_source=generator&theme=0"
+    width="100%"
+    height="152"
+    frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+  </iframe>
+
+  <script>
+    function atualizar() {
+      const inicio = new Date(2023, 9, 19);
+      const agora = new Date();
+      document.getElementById("dataAtual").textContent = agora.toLocaleString("pt-BR");
+      const dias = Math.floor((agora - inicio) / (1000 * 60 * 60 * 24));
+      document.getElementById("dias").textContent = dias;
+    }
+    atualizar();
+    setInterval(atualizar, 1000);
+  </script>
+
+  <script>
+    function criarCoracao() {
+      const coracao = document.createElement("div");
+      coracao.classList.add("heart");
+      coracao.style.left = Math.random() * 100 + "vw";
+      coracao.style.fontSize = (Math.random() * 10 + 20) + "px";
+      coracao.style.animationDuration = (Math.random() * 5 + 5) + "s";
+      coracao.innerText = "💖";
+      document.body.appendChild(coracao);
+      setTimeout(() => coracao.remove(), 10000);
+    }
+    setInterval(criarCoracao, 500);
+  </script>
+
+</body>
+</html>
